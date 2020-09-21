@@ -13,5 +13,7 @@ The idea with this setup is to be able to add commands to either both *home* and
 Add symlinks to your ~/bin directory
 
 ln -s $HOME/sources/bashrc-contents/bin_home $HOME/bin/bin_home
+
 ln -s $HOME/sources/bashrc-contents/bin_work $HOME/bin/bin_work
+
 ln -s $HOME/sources/bashrc-contents/bin_sysman $HOME/bin/bin_sysman
