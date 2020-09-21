@@ -7,3 +7,13 @@ linux-settings: contains the bashrc file itself
 bashrc-contents: contains the files that are sourced by bashrc
 
 The idea with this setup is to be able to add commands to either both *home* and *work*, or only *home* environment, regardless of where I'm actual sitting right now, either home or at work. 
+
+## Instructions
+
+Add symlinks to your ~/bin directory
+
+ln -s $HOME/sources/bashrc-contents/bin_home $HOME/bin/bin_home
+
+ln -s $HOME/sources/bashrc-contents/bin_work $HOME/bin/bin_work
+
+ln -s $HOME/sources/bashrc-contents/bin_sysman $HOME/bin/bin_sysman
