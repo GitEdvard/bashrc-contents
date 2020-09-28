@@ -2,5 +2,5 @@ alias cdr='cd ~/sources/system-management/snpseq/'
 alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
-
+alias start-sysman-ssh='ssh-add ~/.ssh/id_rsa'
 sysman=~/sources/system-management/snpseq
