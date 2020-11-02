@@ -4,4 +4,5 @@ alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
 alias start-sysman-ssh='ssh-add ~/.ssh/id_rsa'
 alias release-buildservers='ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "192.168.50.101" && ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "buildservers.snpseq.local"'
+alias copy-snpseq='scp -r /home/edvard/sources/commonlims-snpseq root@buildservers.snpseq.local:/root'
 sysman=~/sources/system-management/snpseq

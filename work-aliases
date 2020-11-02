@@ -15,5 +15,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias makefresh='make fresh && pytest tests/clims'
 alias cda='cd $HOME/sources/commonlims/src/sentry/static/sentry/app'
 alias cdt='cd $HOME/sources/commonlims/tests/js/spec'
+alias cdc='cd $HOME/sources/commonlims'
 alias devserver-fresh='make fresh && lims devserver --browser-reload'
 alias devserver='lims devserver --browser-reload'
+alias complete-cyclic='source complete-cyclic.sh'
+alias complete-straight='source complete-straight.sh'
