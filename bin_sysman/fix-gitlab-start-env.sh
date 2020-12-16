@@ -11,5 +11,7 @@ scp /home/edvard/test_install_clims/cd-gitlab.sh root@buildservers.snpseq.local:
 ssh root@buildservers.snpseq.local chmod a+x /root/cd-gitlab.sh
 scp /home/edvard/test_install_clims/su-gitlab.sh root@buildservers.snpseq.local:/data/gitlab-runner/home/.
 ssh root@buildservers.snpseq.local chmod a+x /data/gitlab-runner/home/su-gitlab.sh
+scp /home/edvard/test_install_clims/init-conda.sh root@buildservers.snpseq.local:/data/gitlab-runner/home/.
+ssh root@buildservers.snpseq.local chmod a+x /data/gitlab-runner/home/init-conda.sh
 
 # Now, log in to server, change to gitlab-runner user and run build-conda-and-unit-test.sh
