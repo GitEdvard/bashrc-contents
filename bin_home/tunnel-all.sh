@@ -38,7 +38,7 @@ kill -9 $(lsof -i:8123 -t) 2> /dev/null
 set -e
 
 echo "ssh:ing to workstation and tunnel internal resources..."
-ssh -L 5001:gitlab.snpseq.medsci.uu.se:443 -L 5002:lims-dev.snpseq.medsci.uu.se:443 -L 5003:reporting.snpseq.medsci.uu.se:443 -f -C -N $workstation_username@$workstation
+ssh -L 5001:gitlab.snpseq.medsci.uu.se:443 -L 5002:lims-dev.snpseq.medsci.uu.se:443 -L 5003:reporting.snpseq.medsci.uu.se:443 -L 5004:lims-db.snpseq.medsci.uu.se:5432 -f -C -N $workstation_username@$workstation
 
 echo "SSHing using SOCKS protocol on port 8123..."
 echo "Setup a SOCKS profile in your webbrowser using this port for accessing internal websites"

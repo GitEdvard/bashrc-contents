@@ -6,4 +6,5 @@ alias tunnel-lims-dev='ssh -L 5002:lims-dev.snpseq.medsci.uu.se:443 $SNPSEQ_WORK
 alias tunnel-tableau='ssh -L 5003:reporting.snpseq.medsci.uu.se:443 $SNPSEQ_WORKSTATION_USERNAME@$SNPSEQ_WORKSTATION_HOSTNAME'
 alias restart-network='sudo systemctl restart network-manager.service'
 alias ssh-to-work='ssh_to_work.sh'
-
+alias empty-hello='echo "" > /home/edvard/tmp/hello_log.txt'
+alias empty-app-log='echo "" > /home/edvard/tmp/start-pycharm-log.txt'
