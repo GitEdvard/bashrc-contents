@@ -1,4 +1,5 @@
 alias cdr='cd ~/sources/system-management/snpseq/'
+alias cdv='cd ~/sources/system-management/snpseq/vagrant_systems/buildservers'
 alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
@@ -7,4 +8,6 @@ alias release-buildservers='ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "19
 alias copy-snpseq='scp -r /home/edvard/sources/commonlims-snpseq root@buildservers.snpseq.local:/root'
 alias rsync-snpseq='rsync -av -e ssh --exclude .git /home/edvard/sources/commonlims-snpseq root@buildservers.snpseq.local:/root'
 alias vbm-delete-builderservers="vbm-delete.sh $(vbm-vms | grep buildservers | awk '{print $1}' | sed 's/\"//g')"
-sysman=~/sources/system-management/snpseq
+#alias sysman='conda activate system-managment'
+alias emacsbuild='emacs ~/sources/commonlims-snpseq/scripts/build-conda-and-unit-test.sh'
+alias emacsclims='emacs ~/sources/system-management/snpseq/roles/gitlab_runner/tasks/clims.yml'
