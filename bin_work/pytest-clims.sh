@@ -1,7 +1,7 @@
 #! /bin/bash
 # Run pytest without logs!!
 
-command="pytest --disable-pytest-warnings"
+command="pytest --no-print-logs --log-level=\"WARN\""
 
 command=$command" $@"
 

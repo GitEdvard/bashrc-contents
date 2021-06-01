@@ -1,4 +1,7 @@
 alias docker-remove-containers='docker container stop $(docker container ls -aq) && docker container rm $(docker container ls -aq)'
 alias docker-remove-images='docker image rm $(docker image ls -aq)'
+alias docker-remove-services='docker service rm $(docker service ls -q)'
 alias dcls='docker container ls'
 alias dils='docker image ls'
+alias dsls='docker service ls'
+
