@@ -18,6 +18,7 @@ alias emacsclims='emacs ~/sources/system-management/snpseq/roles/gitlab_runner/t
 alias vbm-delete-reporting="vbm-delete.sh $(vbm-vms | grep reporting | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-lims="vbm-delete.sh $(vbm-vms | grep lims | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-self="vbm-delete.sh $(vbm-vms | grep self | awk '{print $1}' | sed 's/\"//g')"
+alias vbm-delete-snpseq-packs="vbm-delete.sh $(vbm-vms | grep snpseq_packs_arteria | awk '{print $1}' | sed 's/\"//g')"
 alias list-secret-files='find ~/sources/system-management/snpseq/group_vars/*/ -name secrets.yml'
 sysman=~/sources/system-management/snpseq
 
