@@ -1,4 +1,5 @@
 alias cdr='cd ~/sources/system-management/snpseq/'
+alias cdv='cd ~/sources/system-management/snpseq/vagrant_systems/buildservers'
 alias cda='cd ~/sources/ansible/'
 alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
@@ -11,10 +12,15 @@ alias release-self='ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "192.168.50
 alias copy-snpseq='scp -r /home/edvard/sources/commonlims-snpseq root@buildservers.snpseq.local:/root'
 alias rsync-snpseq='rsync -av -e ssh --exclude .git /home/edvard/sources/commonlims-snpseq root@buildservers.snpseq.local:/root'
 alias vbm-delete-builderservers="vbm-delete.sh $(vbm-vms | grep buildservers | awk '{print $1}' | sed 's/\"//g')"
+#alias sysman='conda activate system-managment'
+alias emacsbuild='emacs ~/sources/commonlims-snpseq/scripts/build-conda-and-unit-test.sh'
+alias emacsclims='emacs ~/sources/system-management/snpseq/roles/gitlab_runner/tasks/clims.yml'
 alias vbm-delete-reporting="vbm-delete.sh $(vbm-vms | grep reporting | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-lims="vbm-delete.sh $(vbm-vms | grep lims | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-self="vbm-delete.sh $(vbm-vms | grep self | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-snpseq-packs="vbm-delete.sh $(vbm-vms | grep snpseq_packs_arteria | awk '{print $1}' | sed 's/\"//g')"
+alias vbm-delete-snpseq-packs-summary="vbm-delete.sh $(vbm-vms | grep snpseq_packs_summary | awk '{print $1}' | sed 's/\"//g')"
 alias list-secret-files='find ~/sources/system-management/snpseq/group_vars/*/ -name secrets.yml'
 alias self='source /home/edvard/sources/ansible/venv/bin/activate'
 alias sysman='source /home/edvard/sources/system-management/snpseq/venv/bin/activate'
+
