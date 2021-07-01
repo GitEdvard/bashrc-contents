@@ -5,6 +5,7 @@ alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
 alias start-sysman-ssh='ssh-add ~/.ssh/id_rsa'
+alias start-local-ssh='ssh-add /home/edvard/sources/system-management/snpseq/vagrant_systems/vagrant/obj/ssh/local'
 alias release-buildservers='ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "192.168.50.101" && ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "buildservers.snpseq.local"'
 alias release-reporting='ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "192.168.50.140" && ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "reporting.snpseq.local"'
 alias release-lims='ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "192.168.50.10" && ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "lims.snpseq.local"'
@@ -23,4 +24,3 @@ alias vbm-delete-snpseq-packs-summary="vbm-delete.sh $(vbm-vms | grep snpseq_pac
 alias list-secret-files='find ~/sources/system-management/snpseq/group_vars/*/ -name secrets.yml'
 alias self='source /home/edvard/sources/ansible/venv/bin/activate'
 alias sysman='source /home/edvard/sources/system-management/snpseq/venv/bin/activate'
-
