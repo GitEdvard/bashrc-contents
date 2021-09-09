@@ -1,8 +1,8 @@
 #! /bin/bash
 
-if [[ $# -ne 2 ]];then
-    echo "Usage: view-secret <password-file> <path to secret.yml>"
+if [[ $# -ne 1 ]];then
+    echo "Usage: view-secret <path to secret.yml>"
     exit 1
 fi
 
-ansible-vault view --vault-password-file="$1" "$2"
+ansible-vault view --vault-password-file=/ansible/.vault_password.txt "$1"
