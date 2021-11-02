@@ -34,11 +34,17 @@ set +e
 kill -9 $(lsof -i:5001 -t) 2> /dev/null
 kill -9 $(lsof -i:5002 -t) 2> /dev/null
 kill -9 $(lsof -i:5003 -t) 2> /dev/null
+kill -9 $(lsof -i:5004 -t) 2> /dev/null
+kill -9 $(lsof -i:5005 -t) 2> /dev/null
+kill -9 $(lsof -i:5006 -t) 2> /dev/null
+kill -9 $(lsof -i:5007 -t) 2> /dev/null
+kill -9 $(lsof -i:5008 -t) 2> /dev/null
+kill -9 $(lsof -i:5009 -t) 2> /dev/null
 kill -9 $(lsof -i:8123 -t) 2> /dev/null
 set -e
 
 echo "ssh:ing to workstation and tunnel internal resources..."
-ssh -L 5001:gitlab.snpseq.medsci.uu.se:443 -L 5002:lims-dev.snpseq.medsci.uu.se:443 -L 5003:reporting.snpseq.medsci.uu.se:443 -L 5004:lims-db.snpseq.medsci.uu.se:5432 -L 5005:lims-db-dev.snpseq.medsci.uu.se:5432 -L 5006:lims-db-staging.snpseq.medsci.uu.se:5432 -L 5007:lims.snpseq.medsci.uu.se:443 -L 5008:lims-staging.snpseq.medsci.uu.se:443 -f -C -N $workstation_username@$workstation
+ssh -L 5001:gitlab.snpseq.medsci.uu.se:443 -L 5002:lims-dev.snpseq.medsci.uu.se:443 -L 5003:reporting.snpseq.medsci.uu.se:443 -L 5004:lims-db.snpseq.medsci.uu.se:5432 -L 5005:lims-db-dev.snpseq.medsci.uu.se:5432 -L 5006:lims-db-staging.snpseq.medsci.uu.se:5432 -L 5007:lims.snpseq.medsci.uu.se:443 -L 5008:lims-staging.snpseq.medsci.uu.se:443 -L 5009:lims-c7.snpseq.medsci.uu.se:443 -f -C -N $workstation_username@$workstation
 
 echo "SSHing using SOCKS protocol on port 8123..."
 echo "Setup a SOCKS profile in your webbrowser using this port for accessing internal websites"
