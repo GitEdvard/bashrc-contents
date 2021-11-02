@@ -1,1 +1,3 @@
-alias start-ssh='eval $(ssh-agent -s) && ssh-add ~/.ssh/github_kubuntu2'
+alias start-ssh='eval $(ssh-agent -s)'
+alias start-github-ssh='ssh-add ~/.ssh/github_kubuntu2'
+alias start-gitlab-ssh='ssh-add ~/.ssh/gitlab_kubuntu2'
