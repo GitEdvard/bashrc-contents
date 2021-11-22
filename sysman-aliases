@@ -29,3 +29,4 @@ alias vbm-delete-snpseq-packs-summary="vbm-delete.sh $(vbm-vms | grep snpseq_pac
 alias list-secret-files='find ~/sources/system-management/snpseq/group_vars/*/ -name secrets.yml'
 alias self='source /home/edvard/sources/ansible/venv/bin/activate'
 alias sysman='source /home/edvard/sources/system-management/snpseq/venv/bin/activate'
+alias greps='grep --color=auto -r --exclude-dir={files,venv,dependencies}'
