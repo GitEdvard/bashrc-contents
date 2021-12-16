@@ -1,6 +1,5 @@
 alias cdr='cd ~/sources/snpseq/system-management/snpseq/'
 alias cdv='cd ~/sources/snpseq/system-management/snpseq/vagrant_systems/buildservers'
-alias cda='cd ~/sources/admin/ansible/'
 alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
