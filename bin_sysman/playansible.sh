@@ -6,6 +6,6 @@ if [[ $# -eq 0 ]]; then
 	exit 1
 fi
 
-ansible-playbook -i /home/edvard/sources/system-management/snpseq/inventories/local_inventory "$@"
+ansible-playbook -i /home/edvard/sources/snpseq/system-management/snpseq/inventories/local_inventory "$@"
 
 

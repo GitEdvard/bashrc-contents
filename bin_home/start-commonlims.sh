@@ -1,5 +1,5 @@
-echo "(start-commonlims.sh) cd to /home/edvard/sources/commonlims"
-cd /home/edvard/sources/commonlims
+echo "(start-commonlims.sh) cd to /home/edvard/sources/snpseq/commonlims"
+cd /home/edvard/sources/snpseq/commonlims
 #CONDA_BASE=$(conda info --base)
 eval "$(/home/edvard/Installations/miniconda3/bin/conda shell.bash hook)" # fix for source activate within a subshell...
 #CONDA_BASE=/home/edvard/Installations/miniconda3

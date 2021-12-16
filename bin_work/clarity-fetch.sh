@@ -6,6 +6,6 @@ if [[ $# -ne 1 ]]; then
 fi
       
 
-source /home/edvard/sources/clarity-snpseq/venv/bin/activate
+source /home/edvard/sources/snpseq/clarity-snpseq/venv/bin/activate
 
-python /home/edvard/sources/bashrc-contents/python/clarity-fetch.py "$1"
+python /home/edvard/sources/admin/bashrc-contents/python/clarity-fetch.py "$1"

@@ -2,7 +2,7 @@
 # Fakes a gitlab ci run for the commonlims-snpseq repository
 # To be executed after buildservers.yml playbook has been run
 
-rsync -av -e ssh --exclude .git /home/edvard/sources/commonlims-snpseq root@buildservers.snpseq.local:/data/gitlab-runner/home/
+rsync -av -e ssh --exclude .git /home/edvard/sources/snpseq/commonlims-snpseq root@buildservers.snpseq.local:/data/gitlab-runner/home/
 ssh root@buildservers.snpseq.local chown -R gitlab-runner: /data/gitlab-runner/home
 scp /home/edvard/Documents/test_install_clims/Makefile root@buildservers.snpseq.local:/data/gitlab-runner/home/commonlims-snpseq/.
 scp /home/edvard/Documents/test_install_clims/create-conda.sh root@buildservers.snpseq.local:/data/gitlab-runner/home/commonlims-snpseq/.

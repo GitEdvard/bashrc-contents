@@ -13,7 +13,7 @@ vboxmanage list vms | awk '{print $1}' | sed 's/\"//g' | while read -r vm ; do
 done
 
 # Release vm entries in known hosts
-cat /home/edvard/sources/system-management/snpseq/vagrant_systems/vagrant/hosts.local | grep -v "^$" | while read line;
+cat /home/edvard/sources/snpseq/system-management/snpseq/vagrant_systems/vagrant/hosts.local | grep -v "^$" | while read line;
 do
     ip=$(printf "$line" | awk '{print $1}')
     dns_name=$(printf "$line" | awk '{print $2}')
