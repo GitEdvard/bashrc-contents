@@ -1,6 +1,6 @@
-alias cdr='cd ~/sources/system-management/snpseq/'
-alias cdv='cd ~/sources/system-management/snpseq/vagrant_systems/buildservers'
-alias cda='cd ~/sources/ansible/'
+alias cdr='cd ~/sources/snpseq/system-management/snpseq/'
+alias cdv='cd ~/sources/snpseq/system-management/snpseq/vagrant_systems/buildservers'
+alias cda='cd ~/sources/admin/ansible/'
 alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
@@ -17,7 +17,7 @@ alias copy-snpseq='scp -r /home/edvard/sources/snpseq/commonlims-snpseq root@bui
 alias rsync-snpseq='rsync -av -e ssh --exclude .git /home/edvard/sources/snpseq/commonlims-snpseq root@buildservers.snpseq.local:/root'
 alias vbm-delete-builderservers="vbm-delete.sh $(vbm-vms | grep buildservers | awk '{print $1}' | sed 's/\"//g')"
 #alias sysman='conda activate system-managment'
-alias emacsbuild='emacs ~/sources/commonlims-snpseq/scripts/build-conda-and-unit-test.sh'
+alias emacsbuild='emacs ~/sources/snpseq/commonlims-snpseq/scripts/build-conda-and-unit-test.sh'
 alias vbm-delete-reporting="vbm-delete.sh $(vbm-vms | grep reporting | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-seqreports="vbm-delete.sh $(vbm-vms | grep seqreports | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-lims="vbm-delete.sh $(vbm-vms | grep lims_lims_ | awk '{print $1}' | sed 's/\"//g') && vbm-delete.sh $(vbm-vms | grep lims_lims-db | awk '{print $1}' | sed 's/\"//g')"
@@ -26,7 +26,7 @@ alias vbm-delete-lims-db="vbm-delete.sh $(vbm-vms | grep lims_lims-db | awk '{pr
 alias vbm-delete-self="vbm-delete.sh $(vbm-vms | grep self | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-snpseq-packs="vbm-delete.sh $(vbm-vms | grep snpseq_packs_arteria | awk '{print $1}' | sed 's/\"//g')"
 alias vbm-delete-snpseq-packs-summary="vbm-delete.sh $(vbm-vms | grep snpseq_packs_summary | awk '{print $1}' | sed 's/\"//g')"
-alias list-secret-files='find ~/sources/system-management/snpseq/group_vars/*/ -name secrets.yml'
+alias list-secret-files='find ~/sources/snpseq/system-management/snpseq/group_vars/*/ -name secrets.yml'
 alias self='source /home/edvard/sources/admin/ansible/venv/bin/activate'
 alias sysman='source /home/edvard/sources/snpseq/system-management/snpseq/venv/bin/activate'
 alias greps='grep --color=auto -r --exclude-dir={files,venv,dependencies}'
