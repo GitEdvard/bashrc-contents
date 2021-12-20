@@ -15,5 +15,5 @@
 [cola]
 	spellcheck = false
 [core]
-	editor = emacs -nw
+  editor = vim
 	excludesfile=~/.gitignore-system
