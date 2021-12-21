@@ -16,4 +16,4 @@
 	spellcheck = false
 [core]
   editor = vim
-	excludesfile=~/.gitignore-system
+  excludesfile=~/.gitignore-system
