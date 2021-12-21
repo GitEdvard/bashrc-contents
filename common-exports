@@ -1,0 +1,4 @@
+export ACKRC=".ackrc"
+export PATH="$PATH:~/bin/bin_sysman"
+export PATH="$PATH:~/bin/bin_docker"
+export PATH="$PATH:/usr/bin"
