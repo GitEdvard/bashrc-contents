@@ -1,5 +1,5 @@
 alias cdr='cd ~/sources/snpseq/system-management/snpseq/'
-alias cdv='cd ~/sources/snpseq/system-management/snpseq/vagrant_systems/buildservers'
+alias cdm='cd ~/sources/snpseq/miarka-provision/'
 alias vbm='vboxmanage'
 alias vbm-runningvms='vboxmanage list runningvms'
 alias vbm-vms='vboxmanage list vms'
