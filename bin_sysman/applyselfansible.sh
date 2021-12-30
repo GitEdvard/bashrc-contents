@@ -6,11 +6,6 @@ if [[ $# -eq 0 ]]; then
 	exit 1
 fi
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
-
 ansible-playbook -i /home/edvard/sources/admin/ansible/inventories/dev_inventory "$@"
 
 
