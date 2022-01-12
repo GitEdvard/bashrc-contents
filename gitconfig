@@ -17,3 +17,6 @@
 [core]
   editor = vim
   excludesfile=~/.gitignore-system
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3

@@ -11,3 +11,4 @@ pyvenv.cfg
 *.swp
 .ackrc
 *.swo
+Session.vim
