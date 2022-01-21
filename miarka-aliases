@@ -1,0 +1,2 @@
+alias miarkaenv='source /home/edvard/deployment/resources/bashrc'
+alias ansibleenv='source /home/edvard/deployment/resources/ansible-env/bin/activate'
