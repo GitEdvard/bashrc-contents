@@ -6,5 +6,5 @@ if [[ $# -eq 0 ]]; then
 	exit 1
 fi
 
-ansible-playbook -i /home/edvard/sources/snpseq/miarka-provision/local_inventory.yml install.yml --e site=upps -t "$@" 
+ansible-playbook -i /home/edvard/sources/snpseq/miarka-provision/local_inventory.yml install.yml -e site=upps -e apply_to_conda=false -e seqreports_fastq_screen_resource_path=./files/ -t "$@" 
 
