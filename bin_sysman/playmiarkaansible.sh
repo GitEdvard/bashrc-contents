@@ -2,7 +2,7 @@
 # Play an ansible playbook with local inventory file
 
 if [[ $# -eq 0 ]]; then
-	echo "Usage: play.sh <role, not playbook> [options]"  
+	echo "Usage: play.sh <role, not playbook> [options]"
 	exit 1
 fi
 
