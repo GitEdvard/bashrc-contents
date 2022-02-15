@@ -5,4 +5,4 @@ if [[ $# -ne 1 ]]; then
 	exit 1
 fi
 
-ansible -i /home/edvard/sources/snpseq/miarka-provision/inventory.yml all -m debug -a "var=$1"
+ansible -i /home/edvard/sources/miarka-provision/inventory.yml all -m debug -a "var=$1"

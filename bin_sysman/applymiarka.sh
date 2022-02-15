@@ -10,5 +10,5 @@ fi
 
 #singularity run --bind /home/edvard/test-deploy /vulpes/ngi/miarka-ansible.sif ansible-playbook -i /home/edvard/sources/miarka-provision/inventory.yml install.yml --e site=upps --e deployment_remote_path=/home/edvard/test-deploy --e deployment_environment=devel --e deployment_version=123 --e anaconda_path=/home/edvard/miniconda3 --e root_path=/home/edvard/test-deploy --e ngi_pipeline_venv=/home/edvard/miniconda3/envs/NGI --e ngi_pipeline_venv3=/home/edvard/miniconda3/envs/NGI_py3 -t "$@"
 
-ansible-playbook -i /home/edvard/sources/miarka-provision/inventory.yml install.yml --e site=upps --e deployment_remote_path=/home/edvard/test-deploy --e deployment_environment=devel --e anaconda_path=/home/edvard/miniconda3 --e root_path=/home/edvard/test-deploy --e ngi_pipeline_venv=/home/edvard/miniconda3/envs/NGI --e ngi_pipeline_venv3=/home/edvard/miniconda3/envs/NGI_py3 --skip-tags ngi_pipeline,nextflow -t "$@"
+ansible-playbook -i /home/edvard/sources/miarka-provision/inventory.yml install.yml -e "@/home/edvard/sources/admin/bashrc-contents/bin_sysman/applymiarka_vars_devel.yml" -e "@env_vars/site_upps_env_all.yml" -t "$@"
 
