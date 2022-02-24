@@ -9,3 +9,5 @@ ngi_pipeline_venv3: '/home/edvard/miniconda3/envs/NGI_py3'
 proj_root: '/home/edvard/test-deploy/proj_root'
 deployment_target: '/home/edvard/test-deploy/deployment_target'
 charon_api_token: secret
+ngi_containers: "{{ root_path }}/containers"
+ngi_group: 'ngi-sw'
