@@ -19,6 +19,16 @@ do
     dns_name=$(printf "$line" | awk '{print $2}')
     # echo $ip
     # echo $dns_name
-    ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "$ip" 
-    ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "$dns_name" 
+    ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "$ip" 2>/dev/null
+    ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "$dns_name" 2>/dev/null
+done
+
+cat /home/edvard/sources/admin/ansible/vagrant_systems/vagrant/hosts.local | grep -v "^$" | while read line;
+do
+    ip=$(printf "$line" | awk '{print $1}')
+    dns_name=$(printf "$line" | awk '{print $2}')
+    # echo $ip
+    # echo $dns_name
+    ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "$ip" 2>/dev/null
+    ssh-keygen -f "/home/edvard/.ssh/known_hosts" -R "$dns_name" 2>/dev/null
 done
