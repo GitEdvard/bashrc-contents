@@ -12,3 +12,5 @@ charon_api_token: secret
 ngi_containers: "{{ root_path }}/containers"
 ngi_group: 'edvard'
 ngi_sw_group: 'edvard'
+artifact_zip: '/home/edvard/seqreports/artifacts.zip'
+seqreports_artifacts_path: "/home/edvard/test-deploy/resources/seqreports-artifacts"
