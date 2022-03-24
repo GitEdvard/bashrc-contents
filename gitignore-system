@@ -12,3 +12,4 @@ pyvenv.cfg
 .ackrc
 *.swo
 Session.vim
+tags
