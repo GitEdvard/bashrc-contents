@@ -22,3 +22,9 @@
   conflictstyle = diff3
 [mergetool]
 	keepBackup = false
+[safe]
+	directory = /home/edvard/orc_mnt/sources/system-management
+	directory = /home/edvard/orc_mnt/sources/bashrc-contents
+	directory = /home/edvard/orc_mnt/sources/stephan-sysman/system-managemen
+	directory = /home/edvard/orc_mnt/sources/stephan-sysman/system-management
+	directory = /home/edvard/orc_mnt/sources/sysman-working/system-management
