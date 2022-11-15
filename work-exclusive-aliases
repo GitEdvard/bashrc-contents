@@ -1,6 +1,8 @@
 alias start-ssh='eval $(ssh-agent -s)'
 alias start-github-ssh='ssh-add ~/.ssh/github_kubuntu2'
+alias start-git-ssh='ssh-add ~/.ssh/git'
 alias start-gitlab-ssh='ssh-add ~/.ssh/gitlab_kubuntu2'
 alias ssh-miarka='ssh edvard@miarka-d.uppmax.uu.se'
 alias ssh-uppmax='ssh edvard@rackham.uppmax.uu.se'
 alias mount-orc='sshfs edeng655@mm-xorc001.medsci.uu.se:/home/MOLMED/edeng655 ./orc_mnt'
+alias ssh-to-lims-dev='ssh edeng655@lims-dev.snpseq.medsci.uu.se'
