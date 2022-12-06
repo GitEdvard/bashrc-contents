@@ -1,0 +1,2 @@
+alias start-windows-ssh='ssh-add ~/.ssh/windows-sub'
+
