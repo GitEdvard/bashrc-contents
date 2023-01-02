@@ -32,7 +32,6 @@ alias set-clarity-staging='cp ~/.genologicsrc_staging ~/.genologicsrc'
 alias pyvenv='python3.8 -m venv ./venv'
 alias pyvenv-remove='rm -rf venv'
 alias cleanse-uri-prod='find-replace.sh . lims.snpseq.medsci.uu.se:5007 develop'
-alias python='python3'
 alias restore-nvim-session='nvim -S Session.vim'
 alias mountmyargos="sudo mount -t cifs //argos.rudbeck.uu.se/MyFolder$ my_argos -o domain=user,user=edeng655,uid=$(id -u),gid=$(id -g)"
 alias mountargos="sudo mount -t cifs //argos.rudbeck.uu.se/MyGroups$ argos -o domain=user,user=edeng655,uid=$(id -u),gid=$(id -g)"
