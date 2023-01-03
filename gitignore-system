@@ -16,3 +16,5 @@ pyvenv.cfg
 Session.vim
 tags
 .vimspector.json
+.dapsettings.json
+.editorconfig
