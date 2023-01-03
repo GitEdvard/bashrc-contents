@@ -18,3 +18,4 @@ tags
 .vimspector.json
 .dapsettings.json
 .editorconfig
+test.lua
