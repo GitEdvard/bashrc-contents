@@ -19,3 +19,4 @@ tags
 .dapsettings.json
 .editorconfig
 test.lua
+.projections.json
