@@ -1,0 +1,38 @@
+Sunday 15/1 2023
+x Implement projectionist on stock-winners
+x Unicode characters
+* Show git branch name in command prompt and in vim
+* Show extra white spaces with heightend dot
+* markdown preview
+* telescope bookmarks
+x git difftool
+
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+sudo apt install libxcb-xkb1
+
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+
+Display variabeln populerad efter wsl --update i powershell. Vet inte om gpu installation f;r intel gjorde n[got ovan. 
+
+~$ kitty
+[017 14:24:53.504121] [glfw error 65544]: Failed to connect to DBUS session bus. DBUS error: D-Bus library appears to be incorrectly set up: see the manual page for dbus-uuidgen to correct this issue. (Failed to open "/var/lib/dbus/machine-id": No such file or directory; UUID file '/etc/machine-id' should contain a hex string of length 32, not length 0, with no other text)
+[017 14:24:53.512165] [glfw error 65542]: EGL: Library not found
+[017 14:24:53.514114] Traceback (most recent call last):
+    File "kitty/main.py", line 477, in main
+    File "kitty/main.py", line 469, in _main
+    File "kitty/main.py", line 233, in __call__
+    File "kitty/main.py", line 206, in _run_app
+    ValueError: Failed to create GLFWwindow
+
+sudo /etc/init.d/dbus start
+
+Fixar font f;r wsl
+* Install fonts for cascia code, https://github.com/microsoft/cascadia-code
+* download zip, unzip, right-click, and install for all users
+* right-click board for wsl terminal, change font to cascadia code
+* ligatures is now fixed
+
+Sunday 29/1 2023
+* Install omnysharp roslyn
+  > install from ansible
+* Configure vim for omnisharp

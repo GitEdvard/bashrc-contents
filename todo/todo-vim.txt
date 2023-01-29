@@ -1,0 +1,43 @@
+Todo lista
+* Kör tester on save, .net
+  > Ett kommando för test at cursor
+  > Ett kommando för testclass at cursor
+  > Samma för python
+  > Samma för .net framework
+* Installera undotree (neuralnine)
+* Plugin som visar uppdaterade rader
+* Kör debug från test, .net
+* Autocomplete snippets
+* Gör nnoremap för {
+* Använd debug tool för .net framework
+  > UI tool
+  > cmd line tool
+  > Integrerar med nvim
+* python
+  > Installera language server
+  > toto definition, till submodule
+  > Debug clarity
+  > Debug from test
+* ansible för windows
+  > installera wsl
+  > Visa unicode characters på wsl
+* Linting? .editorconfig
+  > Undersök file ending
+* Snippet för .net function
+* vimrc
+  > Gör om vimrc till lua
+  > Organisera vimrc
+  > Följ vimrc guiden på youtube, ordna med plug + autocmd
+* Telescope
+  > Fuzzy find wild grep (?)
+  > Installera alla plugins
+* Ta bort bookmark plugin
+
+https://vim.fandom.com/wiki/Use_Vim_like_an_IDE
+
+Hemmet
+* Högtalare
+* Bild att sätta upp på väggen
+* Lister
+* Heminredningstidning
+* Tvätta golv

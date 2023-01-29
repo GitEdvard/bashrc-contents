@@ -1,0 +1,15 @@
+* lsp
+  > goto definition
+  > Find references
+  > Jump to next function
+* Debug
+  > From test
+  > From entry point
+* Launch
+* Run tests
+  > Run one-time, single test and file
+  > Run selected test on save
+* Linting?
+  > Remove extra blank lines
+  > Remove trailing whitespace
+  > Handling of braces
