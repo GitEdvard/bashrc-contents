@@ -38,3 +38,4 @@ alias mountargos="sudo mount -t cifs //argos.rudbeck.uu.se/MyGroups$ argos -o do
 alias create-ctags='ctags -R'
 alias set-lua='sudo mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim.bak; sudo mv ~/.config/nvim/init.lua.bak ~/.config/nvim/init.lua'
 alias set-vim='sudo mv ~/.config/nvim/init.vim.bak ~/.config/nvim/init.vim; sudo mv ~/.config/nvim/init.lua ~/.config/nvim/init.lua.bak'
+alias nls='npm ls --depth 0'
