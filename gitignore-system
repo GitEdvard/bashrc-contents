@@ -20,3 +20,10 @@ tags
 .editorconfig
 test.lua
 .projections.json
+
+# java related
+.metadata/
+jdt.ls-java-project/
+out/
+*.class
+*.jar
