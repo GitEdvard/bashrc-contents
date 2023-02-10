@@ -27,3 +27,6 @@ jdt.ls-java-project/
 out/
 *.class
 *.jar
+.project
+.settings
+.classpath
