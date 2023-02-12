@@ -1,0 +1,3 @@
+export PATH="/home/edvard/bin/jdk-17.0.6/bin:$PATH"
+export JAVA_HOME="/home/edvard/bin/jdk-17.0.6/"
+
