@@ -30,3 +30,8 @@
 	directory = /home/edvard/orc_mnt/sources/sysman-working/system-management
 	directory = /home/edvard/orc_mnt/sources/fake-sequencer
 	directory = /mnt/c/GitRoot/chiasma
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
