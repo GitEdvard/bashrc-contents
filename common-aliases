@@ -41,4 +41,5 @@ alias set-vim='sudo mv ~/.config/nvim/init.vim.bak ~/.config/nvim/init.vim; sudo
 alias nls='npm ls --depth 0'
 alias vimsync='rsync -au --progress ~/sources/admin/VimFiles/* /mnt/c/EdvardsProgram/HOME/.vim/ --exclude .git --exclude plugged'
 alias vimroot='rsync -au --progress ~/sources/admin/VimRoot/* /mnt/c/EdvardsProgram/HOME/ --exclude .git && mv /mnt/c/EdvardsProgram/HOME/vimrc /mnt/c/EdvardsProgram/HOME/.vimrc'
-alias nvim='/home/edvard/bin/nvim-linux-x86_64/bin/nvim'
+alias open-latest='nvim $(ls -t | head -n 1)'
+alias start-ssh='eval $(ssh-agent -s)'
