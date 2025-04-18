@@ -1,0 +1,4 @@
+alias nvim='/home/edvard/bin/nvim-linux64/bin/nvim'
+alias remove-instrumentdb='rm /storage/system/instrument.db'
+alias accti='source ../../venv/bin/activate'
+
