@@ -20,6 +20,10 @@ tags
 .editorconfig
 test.lua
 .projections.json
+.command.json
+Console.txt
+.run-config/
+.vimsettings.json
 
 # java related
 .metadata/
