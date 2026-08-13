@@ -1,3 +1,4 @@
 export PATH="$PATH:/mnt/c/Users/edven/AppData/Local/Programs/Microsoft VS Code/bin"
 export OPENBLAS_CORETYPE=Haswell
+export BROWSER=wslview
 

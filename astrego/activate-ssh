@@ -1,4 +1,5 @@
 eval $(ssh-agent -s)
 ssh-add $HOME/.ssh/github
 ssh-add $HOME/.ssh/bitbucket
+ssh-add $HOME/.ssh/pa100_dev_key_20240516
 

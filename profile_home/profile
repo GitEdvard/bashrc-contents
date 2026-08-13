@@ -27,3 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export LESS="$LESS -R -Q"
+. "/home/edvard/.deno/env"

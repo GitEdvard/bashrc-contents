@@ -3,4 +3,6 @@ alias remove-instrumentdb='rm /storage/system/instrument.db'
 alias open-instrumentdb='sqlitebrowser /storage/system/instrument.db'
 alias accti='source ../../venv/bin/activate'
 alias cr='/home/edvard/bin/bin_astrego/change-region.sh'
+alias rmshots='rm -rf /home/edvard/sources/astrego/captiver/.documentation/ifu_screenshots/EU/en/*'
+alias cpshots='cp /home/edvard/sources/astrego/captiver/.documentation/ifu_screenshots/EU/en/* /mnt/c/Users/edvard.englund/smajobb/screenshots/251212/copies/'
 
